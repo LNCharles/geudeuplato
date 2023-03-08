@@ -1,0 +1,53 @@
+@import url("components/buttons.css");
+@import url("components/container.css");
+@import url(//db.onlinewebfonts.com/c/d0b9458c6d1bf76bb55624385cf59c84?family=Celtic+Garamond+the+2nd);
+
+
+
+.tout {
+    animation: appear;
+    animation-duration: 1.5s;
+};
+
+
+.game-poster {
+    animation: slide-left;
+    animation-duration: 1.5s;
+}
+
+.campaign-button:hover {
+    animation: rot;
+    animation-duration: 2s;
+}
+
+@keyframes appear {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+};
+
+
+@keyframes slide-left {
+    0% {
+        position: -20%;
+    }
+    100% {
+        position: 0%;
+    }
+};
+
+
+@keyframes rot {
+    0% {
+        transform: rotate(0);
+    }
+    50% {
+        transform: rotate(180deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
